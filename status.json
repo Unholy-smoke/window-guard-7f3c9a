@@ -1,11 +1,11 @@
 {
   "status": "monitoring",
-  "updated_at": "2026-10-26T17:40:32+00:00",
+  "updated_at": "2026-10-26T17:45:34+00:00",
   "camera": "Logi C270 HD WebCam",
-  "persistent_ratio": 0.005506,
-  "persistent_patch": 0.5625,
-  "motion_ratio": 0.002144,
-  "motion_patch": 0.0625,
+  "persistent_ratio": 0.004581,
+  "persistent_patch": 0.5312,
+  "motion_ratio": 0.002396,
+  "motion_patch": 0.125,
   "cooldown_until": "2026-10-26T17:54:39+00:00",
   "weather": {
     "source": "Met Office London & South East England warnings",
