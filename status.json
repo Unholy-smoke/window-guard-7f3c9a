@@ -1,0 +1,71 @@
+{
+  "status": "monitoring",
+  "updated_at": "2026-10-26T12:04:38+00:00",
+  "camera": "Logi C270 HD WebCam",
+  "persistent_ratio": 0.034676,
+  "persistent_patch": 0.5156,
+  "motion_ratio": 0.002606,
+  "motion_patch": 0.1562,
+  "cooldown_until": "2026-10-26T12:03:40+00:00",
+  "weather": {
+    "source": "Met Office London & South East England warnings",
+    "checked_at": "2026-10-26T12:00:49+00:00",
+    "warning_count": 0,
+    "warnings": [],
+    "source_url": "https://www.metoffice.gov.uk/public/data/PWSCache/WarningsRSS/Region/se",
+    "hourly_forecast": {
+      "source": "Open-Meteo hourly forecast",
+      "checked_at": "2026-10-26T12:00:49+00:00",
+      "hours": 6,
+      "total_precipitation_mm": 2.6,
+      "peak_hour_mm": 1.8,
+      "maximum_probability_percent": 100,
+      "next_rain_at": "2026-10-26T12:00",
+      "periods": [
+        {
+          "time": "2026-10-26T12:00",
+          "probability_percent": 100,
+          "precipitation_mm": 1.8,
+          "rain_mm": 1.8
+        },
+        {
+          "time": "2026-10-26T13:00",
+          "probability_percent": 98,
+          "precipitation_mm": 0.8,
+          "rain_mm": 0.8
+        },
+        {
+          "time": "2026-10-26T14:00",
+          "probability_percent": 88,
+          "precipitation_mm": 0.0,
+          "rain_mm": 0.0
+        },
+        {
+          "time": "2026-10-26T15:00",
+          "probability_percent": 73,
+          "precipitation_mm": 0.0,
+          "rain_mm": 0.0
+        },
+        {
+          "time": "2026-10-26T16:00",
+          "probability_percent": 49,
+          "precipitation_mm": 0.0,
+          "rain_mm": 0.0
+        },
+        {
+          "time": "2026-10-26T17:00",
+          "probability_percent": 21,
+          "precipitation_mm": 0.0,
+          "rain_mm": 0.0
+        }
+      ]
+    },
+    "local_observation": {
+      "source": "Nearby Streatham weather station via Home Assistant",
+      "updated_at": "2026-10-26T12:59:47.918566",
+      "hourly_rain_mm": 0.0,
+      "daily_rain_mm": 1.6002,
+      "hourly_unit": "mm/h"
+    }
+  }
+}

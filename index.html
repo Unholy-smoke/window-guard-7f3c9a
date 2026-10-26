@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="theme-color" content="#10191d">
+  <title>Window Guard journal</title>
+  <style>
+    :root{color-scheme:dark;font:16px system-ui,sans-serif;background:#10191d;color:#edf5f6}body{max-width:960px;margin:auto;padding:16px}header{display:flex;justify-content:space-between;gap:12px;align-items:baseline}h1{font-size:1.5rem;margin:.2rem 0}.state{color:#8fe0b5;font-weight:700}.card{background:#18262c;border:1px solid #2d424a;border-radius:14px;padding:12px;margin:14px 0;box-shadow:0 8px 30px #0004}img{display:block;width:100%;height:auto;border-radius:9px;background:#0b1114}.meta{color:#b6c6cb;margin:.7rem .15rem .15rem;line-height:1.5}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}.empty{color:#b6c6cb}.warning{color:#ffd38b}
+  </style>
+</head>
+<body>
+  <header><h1>Window Guard journal</h1><span class="state" id="state">Loading…</span></header>
+  <section class="card">
+    <img id="latest" src="latest.jpg" alt="Latest annotated study-window frame">
+    <div class="meta" id="status">Loading status…</div>
+  </section>
+  <h2>Recent detected events</h2>
+  <section class="grid" id="events"><p class="empty">Loading…</p></section>
+  <script>
+    const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    async function refresh(){
+      const nonce=`?t=${Date.now()}`;
+      document.querySelector('#latest').src='latest.jpg'+nonce;
+      try{
+        const s=await fetch('status.json'+nonce).then(r=>r.json());
+        const f=s.weather?.hourly_forecast||{},o=s.weather?.local_observation||{};
+        document.querySelector('#state').textContent=s.status==='monitoring'?'Monitoring':(s.status||'Unavailable');
+        document.querySelector('#status').textContent=`Updated ${new Date(s.updated_at).toLocaleString('en-GB')} · nearby rain ${o.hourly_rain_mm??'?'} mm/h · next ${f.hours??6}h ${f.total_precipitation_mm??'?'} mm, peak ${f.peak_hour_mm??'?'} mm/h · ${s.weather?.warning_count||0} formal Met Office warning(s)`;
+      }catch{document.querySelector('#state').textContent='Status unavailable'}
+      try{
+        const items=await fetch('events.json'+nonce).then(r=>r.json());
+        document.querySelector('#events').innerHTML=items.length?items.map(x=>`<article class="card"><a href="${encodeURI(x.image)}"><img src="${encodeURI(x.image)}" alt="Window Guard event"></a><div class="meta">${esc(new Date(x.created_at).toLocaleString('en-GB'))} · ${esc(x.title)}</div></article>`).join(''):'<p class="empty">No visual events have been recorded.</p>';
+      }catch{document.querySelector('#events').innerHTML='<p class="empty">Event list unavailable.</p>'}
+    }
+    refresh();setInterval(refresh,60000);
+  </script>
+</body>
+</html>
