@@ -1,33 +1,27 @@
 {
   "status": "monitoring",
-  "updated_at": "2026-10-26T18:00:31+00:00",
+  "updated_at": "2026-10-26T18:05:33+00:00",
   "camera": "Logi C270 HD WebCam",
-  "persistent_ratio": 0.002312,
-  "persistent_patch": 0.375,
-  "motion_ratio": 0.0029,
-  "motion_patch": 0.0781,
+  "persistent_ratio": 0.002984,
+  "persistent_patch": 0.4688,
+  "motion_ratio": 0.002438,
+  "motion_patch": 0.0938,
   "cooldown_until": "2026-10-26T17:54:39+00:00",
   "weather": {
     "source": "Met Office London & South East England warnings",
-    "checked_at": "2026-10-26T17:46:25+00:00",
+    "checked_at": "2026-10-26T18:01:26+00:00",
     "warning_count": 0,
     "warnings": [],
     "source_url": "https://www.metoffice.gov.uk/public/data/PWSCache/WarningsRSS/Region/se",
     "hourly_forecast": {
       "source": "Open-Meteo hourly forecast",
-      "checked_at": "2026-10-26T17:46:26+00:00",
+      "checked_at": "2026-10-26T18:01:26+00:00",
       "hours": 6,
       "total_precipitation_mm": 0.1,
       "peak_hour_mm": 0.1,
-      "maximum_probability_percent": 26,
-      "next_rain_at": "2026-10-26T17:00",
+      "maximum_probability_percent": 0,
+      "next_rain_at": "2026-10-26T23:00",
       "periods": [
-        {
-          "time": "2026-10-26T17:00",
-          "probability_percent": 26,
-          "precipitation_mm": 0.1,
-          "rain_mm": 0.1
-        },
         {
           "time": "2026-10-26T18:00",
           "probability_percent": 0,
@@ -57,12 +51,18 @@
           "probability_percent": 0,
           "precipitation_mm": 0.0,
           "rain_mm": 0.0
+        },
+        {
+          "time": "2026-10-26T23:00",
+          "probability_percent": 0,
+          "precipitation_mm": 0.1,
+          "rain_mm": 0.1
         }
       ]
     },
     "local_observation": {
       "source": "Nearby Streatham weather station via Home Assistant",
-      "updated_at": "2026-10-26T18:45:47.918140",
+      "updated_at": "2026-10-26T19:00:47.919204",
       "hourly_rain_mm": 0.0,
       "daily_rain_mm": 1.6002,
       "hourly_unit": "mm/h"
