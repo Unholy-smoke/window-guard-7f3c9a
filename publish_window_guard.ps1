@@ -20,13 +20,16 @@ try {
     $items = @()
     $galleryPath = Join-Path $source 'gallery.json'
     if (Test-Path -LiteralPath $galleryPath) {
-        $gallery = @(Get-Content -Raw -LiteralPath $galleryPath | ConvertFrom-Json)
-        foreach ($entry in $gallery | Select-Object -First 20) {
+        $gallery = Get-Content -Raw -LiteralPath $galleryPath | ConvertFrom-Json
+        $eventCount = 0
+        foreach ($entry in $gallery) {
+            if ($eventCount -ge 20) { break }
             $name = Split-Path -Leaf ([string]$entry.image_url)
             $imageSource = Join-Path (Join-Path $source 'alerts') $name
             if (Test-Path -LiteralPath $imageSource) {
                 Copy-Item -LiteralPath $imageSource -Destination (Join-Path $eventDir $name) -Force
                 $items += [ordered]@{created_at=$entry.created_at;title=$entry.title;image="events/$name"}
+                $eventCount++
             }
         }
     }

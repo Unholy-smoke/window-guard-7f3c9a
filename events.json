@@ -1,21 +1,37 @@
-﻿[
-    {
-        "created_at":  [
-                           "2026-10-26T13:11:04+00:00",
-                           "2026-10-26T12:56:04+00:00",
-                           "2026-10-26T12:41:04+00:00",
-                           "2026-10-26T12:26:04+00:00",
-                           "2026-10-26T12:11:04+00:00",
-                           "2026-10-26T11:48:40+00:00"
-                       ],
-        "title":  [
-                      "Sustained visual change",
-                      "Sustained visual change",
-                      "Sustained visual change",
-                      "Sustained visual change",
-                      "Sustained visual change",
-                      "Sustained visual change"
-                  ],
-        "image":  "events/window-event-20261026-114840.jpg"
-    }
+[
+  {
+    "created_at": "2026-10-26T13:26:04+00:00",
+    "title": "Sustained visual change",
+    "image": "events/window-event-20261026-132604.jpg"
+  },
+  {
+    "created_at": "2026-10-26T13:11:04+00:00",
+    "title": "Sustained visual change",
+    "image": "events/window-event-20261026-131104.jpg"
+  },
+  {
+    "created_at": "2026-10-26T12:56:04+00:00",
+    "title": "Sustained visual change",
+    "image": "events/window-event-20261026-125604.jpg"
+  },
+  {
+    "created_at": "2026-10-26T12:41:04+00:00",
+    "title": "Sustained visual change",
+    "image": "events/window-event-20261026-124104.jpg"
+  },
+  {
+    "created_at": "2026-10-26T12:26:04+00:00",
+    "title": "Sustained visual change",
+    "image": "events/window-event-20261026-122604.jpg"
+  },
+  {
+    "created_at": "2026-10-26T12:11:04+00:00",
+    "title": "Sustained visual change",
+    "image": "events/window-event-20261026-121104.jpg"
+  },
+  {
+    "created_at": "2026-10-26T11:48:40+00:00",
+    "title": "Sustained visual change",
+    "image": "events/window-event-20261026-114840.jpg"
+  }
 ]
