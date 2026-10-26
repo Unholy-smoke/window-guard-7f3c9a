@@ -1,10 +1,10 @@
 {
   "status": "monitoring",
-  "updated_at": "2026-10-26T22:25:27+00:00",
+  "updated_at": "2026-10-26T22:30:29+00:00",
   "camera": "Logi C270 HD WebCam",
-  "persistent_ratio": 0.000168,
-  "persistent_patch": 0.0469,
-  "motion_ratio": 0.001975,
+  "persistent_ratio": 4.2e-05,
+  "persistent_patch": 0.0156,
+  "motion_ratio": 0.00206,
   "motion_patch": 0.0625,
   "cooldown_until": "2026-10-26T22:17:35+00:00",
   "weather": {
