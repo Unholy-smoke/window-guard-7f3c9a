@@ -41,7 +41,7 @@ try {
     $items | ConvertTo-Json -Depth 4 | Set-Content -LiteralPath (Join-Path $repo 'events.json') -Encoding utf8
     if ($items.Count -eq 0) { Set-Content -LiteralPath (Join-Path $repo 'events.json') -Value '[]' -Encoding utf8 }
 
-    git -C $repo add --all -- ':!.publisher.lock'
+    git -C $repo add --all
     git -C $repo diff --cached --quiet
     if ($LASTEXITCODE -ne 0) {
         git -C $repo commit -m ("Update Window Guard " + (Get-Date -Format 'yyyy-MM-dd HH:mm'))
