@@ -38,7 +38,7 @@ try {
         }
     }
 
-    $items | ConvertTo-Json -Depth 4 | Set-Content -LiteralPath (Join-Path $repo 'events.json') -Encoding utf8
+    ConvertTo-Json -InputObject @($items) -Depth 4 | Set-Content -LiteralPath (Join-Path $repo 'events.json') -Encoding utf8
     if ($items.Count -eq 0) { Set-Content -LiteralPath (Join-Path $repo 'events.json') -Value '[]' -Encoding utf8 }
 
     git -C $repo add --all
