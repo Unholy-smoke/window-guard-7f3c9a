@@ -20,18 +20,19 @@
   <section class="grid" id="events"><p class="empty">Loading…</p></section>
   <script>
     const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    const RAW='https://raw.githubusercontent.com/Unholy-smoke/window-guard-7f3c9a/main/';
     async function refresh(){
       const nonce=`?t=${Date.now()}`;
-      document.querySelector('#latest').src='latest.jpg'+nonce;
+      document.querySelector('#latest').src=RAW+'latest.jpg'+nonce;
       try{
-        const s=await fetch('status.json'+nonce).then(r=>r.json());
+        const s=await fetch(RAW+'status.json'+nonce,{cache:'no-store'}).then(r=>r.json());
         const f=s.weather?.hourly_forecast||{},o=s.weather?.local_observation||{};
         document.querySelector('#state').textContent=s.status==='monitoring'?'Monitoring':(s.status||'Unavailable');
         document.querySelector('#status').textContent=`Updated ${new Date(s.updated_at).toLocaleString('en-GB')} · nearby rain ${o.hourly_rain_mm??'?'} mm/h · next ${f.hours??6}h ${f.total_precipitation_mm??'?'} mm, peak ${f.peak_hour_mm??'?'} mm/h · ${s.weather?.warning_count||0} formal Met Office warning(s)`;
       }catch{document.querySelector('#state').textContent='Status unavailable'}
       try{
-        const items=await fetch('events.json'+nonce).then(r=>r.json());
-        document.querySelector('#events').innerHTML=items.length?items.map(x=>`<article class="card"><a href="${encodeURI(x.image)}"><img src="${encodeURI(x.image)}" alt="Window Guard event"></a><div class="meta">${esc(new Date(x.created_at).toLocaleString('en-GB'))} · ${esc(x.title)}</div></article>`).join(''):'<p class="empty">No visual events have been recorded.</p>';
+        const items=await fetch(RAW+'events.json'+nonce,{cache:'no-store'}).then(r=>r.json());
+        document.querySelector('#events').innerHTML=items.length?items.map(x=>`<article class="card"><a href="${encodeURI(RAW+x.image)}"><img src="${encodeURI(RAW+x.image)}" alt="Window Guard event"></a><div class="meta">${esc(new Date(x.created_at).toLocaleString('en-GB'))} · ${esc(x.title)}</div></article>`).join(''):'<p class="empty">No visual events have been recorded.</p>';
       }catch{document.querySelector('#events').innerHTML='<p class="empty">Event list unavailable.</p>'}
     }
     refresh();setInterval(refresh,60000);
