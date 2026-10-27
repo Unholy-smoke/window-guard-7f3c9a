@@ -1,24 +1,24 @@
 {
   "status": "monitoring",
-  "updated_at": "2026-10-27T03:30:31+00:00",
+  "updated_at": "2026-10-27T03:35:34+00:00",
   "camera": "Logi C270 HD WebCam",
-  "persistent_ratio": 0.006263,
-  "persistent_patch": 0.5781,
-  "motion_ratio": 0.005842,
-  "motion_patch": 0.4688,
+  "persistent_ratio": 0.0,
+  "persistent_patch": 0.0,
+  "motion_ratio": 0.00206,
+  "motion_patch": 0.0625,
   "cooldown_until": "2026-10-27T03:36:37+00:00",
   "weather": {
     "source": "Met Office London & South East England warnings",
-    "checked_at": "2026-10-27T03:16:30+00:00",
+    "checked_at": "2026-10-27T03:31:30+00:00",
     "warning_count": 0,
     "warnings": [],
     "source_url": "https://www.metoffice.gov.uk/public/data/PWSCache/WarningsRSS/Region/se",
     "hourly_forecast": {
       "source": "Open-Meteo hourly forecast",
-      "checked_at": "2026-10-27T03:16:30+00:00",
+      "checked_at": "2026-10-27T03:31:30+00:00",
       "hours": 6,
-      "total_precipitation_mm": 1.8,
-      "peak_hour_mm": 0.8,
+      "total_precipitation_mm": 1.4,
+      "peak_hour_mm": 0.6,
       "maximum_probability_percent": 93,
       "next_rain_at": "2026-10-27T06:00",
       "periods": [
@@ -43,26 +43,26 @@
         {
           "time": "2026-10-27T06:00",
           "probability_percent": 57,
-          "precipitation_mm": 0.6,
-          "rain_mm": 0.6
+          "precipitation_mm": 0.2,
+          "rain_mm": 0.2
         },
         {
           "time": "2026-10-27T07:00",
           "probability_percent": 76,
-          "precipitation_mm": 0.8,
-          "rain_mm": 0.8
+          "precipitation_mm": 0.6,
+          "rain_mm": 0.6
         },
         {
           "time": "2026-10-27T08:00",
           "probability_percent": 93,
-          "precipitation_mm": 0.4,
-          "rain_mm": 0.4
+          "precipitation_mm": 0.6,
+          "rain_mm": 0.6
         }
       ]
     },
     "local_observation": {
       "source": "Nearby Streatham weather station via Home Assistant",
-      "updated_at": "2026-10-27T04:15:47.919907",
+      "updated_at": "2026-10-27T04:30:47.918824",
       "hourly_rain_mm": 0.0,
       "daily_rain_mm": 0.0,
       "hourly_unit": "mm/h"
