@@ -1,21 +1,24 @@
 {
   "status": "monitoring",
-  "updated_at": "2026-10-27T09:15:35+00:00",
+  "updated_at": "2026-10-27T09:20:23+00:00",
   "camera": "Logi C270 HD WebCam",
-  "persistent_ratio": 0.322671,
-  "persistent_patch": 1.0,
-  "motion_ratio": 0.00517,
-  "motion_patch": 0.1719,
-  "cooldown_until": "2026-10-27T09:15:55+00:00",
+  "persistent_ratio": 0.0,
+  "persistent_patch": 0.0,
+  "motion_ratio": 0.000262,
+  "motion_patch": 0.0156,
+  "rain_current": true,
+  "rain_evidence": "current-hour forecast 0.2 mm at 94%",
+  "water_motion_candidate": false,
+  "cooldown_until": null,
   "weather": {
     "source": "Met Office London & South East England warnings",
-    "checked_at": "2026-10-27T09:01:32+00:00",
+    "checked_at": "2026-10-27T09:19:51+00:00",
     "warning_count": 0,
     "warnings": [],
     "source_url": "https://www.metoffice.gov.uk/public/data/PWSCache/WarningsRSS/Region/se",
     "hourly_forecast": {
       "source": "Open-Meteo hourly forecast",
-      "checked_at": "2026-10-27T09:01:33+00:00",
+      "checked_at": "2026-10-27T09:19:51+00:00",
       "hours": 6,
       "total_precipitation_mm": 0.5,
       "peak_hour_mm": 0.2,
@@ -62,8 +65,8 @@
     },
     "local_observation": {
       "source": "Nearby Streatham weather station via Home Assistant",
-      "updated_at": "2026-10-27T10:01:23.626222",
-      "hourly_rain_mm": 1.1938,
+      "updated_at": "2026-10-27T10:19:23.624482",
+      "hourly_rain_mm": 0.0,
       "daily_rain_mm": 3.5052,
       "hourly_unit": "mm/h"
     }
