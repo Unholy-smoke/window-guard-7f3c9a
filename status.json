@@ -1,24 +1,24 @@
 {
   "status": "monitoring",
-  "updated_at": "2026-10-27T06:30:37+00:00",
+  "updated_at": "2026-10-27T06:35:29+00:00",
   "camera": "Logi C270 HD WebCam",
-  "persistent_ratio": 0.040224,
+  "persistent_ratio": 0.033331,
   "persistent_patch": 1.0,
-  "motion_ratio": 0.0029,
-  "motion_patch": 0.0938,
-  "cooldown_until": "2026-10-27T06:30:54+00:00",
+  "motion_ratio": 0.008911,
+  "motion_patch": 0.5156,
+  "cooldown_until": "2026-10-27T06:45:54+00:00",
   "weather": {
     "source": "Met Office London & South East England warnings",
-    "checked_at": "2026-10-27T06:16:31+00:00",
+    "checked_at": "2026-10-27T06:31:31+00:00",
     "warning_count": 0,
     "warnings": [],
     "source_url": "https://www.metoffice.gov.uk/public/data/PWSCache/WarningsRSS/Region/se",
     "hourly_forecast": {
       "source": "Open-Meteo hourly forecast",
-      "checked_at": "2026-10-27T06:16:31+00:00",
+      "checked_at": "2026-10-27T06:31:31+00:00",
       "hours": 6,
-      "total_precipitation_mm": 1.6,
-      "peak_hour_mm": 0.9,
+      "total_precipitation_mm": 2.3,
+      "peak_hour_mm": 1.4,
       "maximum_probability_percent": 94,
       "next_rain_at": "2026-10-27T07:00",
       "periods": [
@@ -31,14 +31,14 @@
         {
           "time": "2026-10-27T07:00",
           "probability_percent": 63,
-          "precipitation_mm": 0.9,
-          "rain_mm": 0.9
+          "precipitation_mm": 1.4,
+          "rain_mm": 1.4
         },
         {
           "time": "2026-10-27T08:00",
           "probability_percent": 84,
-          "precipitation_mm": 0.4,
-          "rain_mm": 0.4
+          "precipitation_mm": 0.6,
+          "rain_mm": 0.6
         },
         {
           "time": "2026-10-27T09:00",
@@ -62,7 +62,7 @@
     },
     "local_observation": {
       "source": "Nearby Streatham weather station via Home Assistant",
-      "updated_at": "2026-10-27T07:15:47.917681",
+      "updated_at": "2026-10-27T07:30:47.918926",
       "hourly_rain_mm": 0.0,
       "daily_rain_mm": 0.0,
       "hourly_unit": "mm/h"
