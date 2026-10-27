@@ -1,33 +1,27 @@
 {
   "status": "monitoring",
-  "updated_at": "2026-10-27T06:00:32+00:00",
+  "updated_at": "2026-10-27T06:05:35+00:00",
   "camera": "Logi C270 HD WebCam",
-  "persistent_ratio": 0.001051,
-  "persistent_patch": 0.25,
-  "motion_ratio": 0.003783,
-  "motion_patch": 0.2656,
+  "persistent_ratio": 0.000294,
+  "persistent_patch": 0.0781,
+  "motion_ratio": 0.002144,
+  "motion_patch": 0.0469,
   "cooldown_until": "2026-10-27T06:14:56+00:00",
   "weather": {
     "source": "Met Office London & South East England warnings",
-    "checked_at": "2026-10-27T05:46:31+00:00",
+    "checked_at": "2026-10-27T06:01:31+00:00",
     "warning_count": 0,
     "warnings": [],
     "source_url": "https://www.metoffice.gov.uk/public/data/PWSCache/WarningsRSS/Region/se",
     "hourly_forecast": {
       "source": "Open-Meteo hourly forecast",
-      "checked_at": "2026-10-27T05:46:31+00:00",
+      "checked_at": "2026-10-27T06:01:31+00:00",
       "hours": 6,
       "total_precipitation_mm": 1.6,
       "peak_hour_mm": 0.9,
       "maximum_probability_percent": 94,
       "next_rain_at": "2026-10-27T07:00",
       "periods": [
-        {
-          "time": "2026-10-27T05:00",
-          "probability_percent": 26,
-          "precipitation_mm": 0.0,
-          "rain_mm": 0.0
-        },
         {
           "time": "2026-10-27T06:00",
           "probability_percent": 43,
@@ -57,12 +51,18 @@
           "probability_percent": 86,
           "precipitation_mm": 0.1,
           "rain_mm": 0.1
+        },
+        {
+          "time": "2026-10-27T11:00",
+          "probability_percent": 67,
+          "precipitation_mm": 0.0,
+          "rain_mm": 0.0
         }
       ]
     },
     "local_observation": {
       "source": "Nearby Streatham weather station via Home Assistant",
-      "updated_at": "2026-10-27T06:45:47.972302",
+      "updated_at": "2026-10-27T07:00:47.917902",
       "hourly_rain_mm": 0.0,
       "daily_rain_mm": 0.0,
       "hourly_unit": "mm/h"
