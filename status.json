@@ -1,36 +1,30 @@
 {
   "status": "monitoring",
-  "updated_at": "2026-10-27T11:00:31+00:00",
+  "updated_at": "2026-10-27T11:05:33+00:00",
   "camera": "Logi C270 HD WebCam",
-  "persistent_ratio": 0.092466,
-  "persistent_patch": 0.75,
-  "motion_ratio": 0.004108,
-  "motion_patch": 0.0625,
-  "rain_current": true,
-  "rain_evidence": "current-hour forecast 0.2 mm at 86%",
+  "persistent_ratio": 0.057158,
+  "persistent_patch": 0.6562,
+  "motion_ratio": 0.001748,
+  "motion_patch": 0.0469,
+  "rain_current": false,
+  "rain_evidence": "no observed or current-hour rain evidence",
   "water_motion_candidate": false,
   "cooldown_until": "2026-10-27T10:32:42+00:00",
   "weather": {
     "source": "Met Office London & South East England warnings",
-    "checked_at": "2026-10-27T10:50:24+00:00",
+    "checked_at": "2026-10-27T11:05:24+00:00",
     "warning_count": 0,
     "warnings": [],
     "source_url": "https://www.metoffice.gov.uk/public/data/PWSCache/WarningsRSS/Region/se",
     "hourly_forecast": {
       "source": "Open-Meteo hourly forecast",
-      "checked_at": "2026-10-27T10:50:24+00:00",
+      "checked_at": "2026-10-27T11:05:24+00:00",
       "hours": 6,
-      "total_precipitation_mm": 0.2,
-      "peak_hour_mm": 0.2,
-      "maximum_probability_percent": 86,
-      "next_rain_at": "2026-10-27T10:00",
+      "total_precipitation_mm": 0.0,
+      "peak_hour_mm": 0.0,
+      "maximum_probability_percent": 67,
+      "next_rain_at": null,
       "periods": [
-        {
-          "time": "2026-10-27T10:00",
-          "probability_percent": 86,
-          "precipitation_mm": 0.2,
-          "rain_mm": 0.2
-        },
         {
           "time": "2026-10-27T11:00",
           "probability_percent": 67,
@@ -60,12 +54,18 @@
           "probability_percent": 18,
           "precipitation_mm": 0.0,
           "rain_mm": 0.0
+        },
+        {
+          "time": "2026-10-27T16:00",
+          "probability_percent": 10,
+          "precipitation_mm": 0.0,
+          "rain_mm": 0.0
         }
       ]
     },
     "local_observation": {
       "source": "Nearby Streatham weather station via Home Assistant",
-      "updated_at": "2026-10-27T11:49:23.618283",
+      "updated_at": "2026-10-27T12:05:23.625525",
       "hourly_rain_mm": 0.0,
       "daily_rain_mm": 3.5052,
       "hourly_unit": "mm/h"
