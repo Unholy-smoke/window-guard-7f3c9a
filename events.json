@@ -1,5 +1,10 @@
 ﻿[
     {
+        "created_at":  "2026-10-27T01:06:22+00:00",
+        "title":  "Sustained visual change",
+        "image":  "events/window-event-20261027-010622.jpg"
+    },
+    {
         "created_at":  "2026-10-27T00:38:08+00:00",
         "title":  "Sustained visual change",
         "image":  "events/window-event-20261027-003808.jpg"
@@ -93,10 +98,5 @@
         "created_at":  "2026-10-26T17:06:25+00:00",
         "title":  "Sustained visual change",
         "image":  "events/window-event-20261026-170625.jpg"
-    },
-    {
-        "created_at":  "2026-10-26T16:51:25+00:00",
-        "title":  "Sustained visual change",
-        "image":  "events/window-event-20261026-165124.jpg"
     }
 ]
