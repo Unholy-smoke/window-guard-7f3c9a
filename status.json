@@ -1,36 +1,30 @@
 {
   "status": "monitoring",
-  "updated_at": "2026-10-30T14:05:27+00:00",
+  "updated_at": "2026-10-30T14:10:29+00:00",
   "camera": "Logi C270 HD WebCam",
-  "persistent_ratio": 0.794354,
+  "persistent_ratio": 0.55742,
   "persistent_patch": 1.0,
-  "motion_ratio": 0.02552,
-  "motion_patch": 0.125,
+  "motion_ratio": 0.009876,
+  "motion_patch": 0.0781,
   "rain_current": false,
   "rain_evidence": "no observed or current-hour rain evidence",
   "water_motion_candidate": false,
   "cooldown_until": "2026-10-30T06:39:41+00:00",
   "weather": {
     "source": "Met Office London & South East England warnings",
-    "checked_at": "2026-10-30T13:50:58+00:00",
+    "checked_at": "2026-10-30T14:05:58+00:00",
     "warning_count": 0,
     "warnings": [],
     "source_url": "https://www.metoffice.gov.uk/public/data/PWSCache/WarningsRSS/Region/se",
     "hourly_forecast": {
       "source": "Open-Meteo hourly forecast",
-      "checked_at": "2026-10-30T13:50:58+00:00",
+      "checked_at": "2026-10-30T14:05:58+00:00",
       "hours": 6,
       "total_precipitation_mm": 0.0,
       "peak_hour_mm": 0.0,
       "maximum_probability_percent": 0,
       "next_rain_at": null,
       "periods": [
-        {
-          "time": "2026-10-30T13:00",
-          "probability_percent": 0,
-          "precipitation_mm": 0.0,
-          "rain_mm": 0.0
-        },
         {
           "time": "2026-10-30T14:00",
           "probability_percent": 0,
@@ -60,12 +54,18 @@
           "probability_percent": 0,
           "precipitation_mm": 0.0,
           "rain_mm": 0.0
+        },
+        {
+          "time": "2026-10-30T19:00",
+          "probability_percent": 0,
+          "precipitation_mm": 0.0,
+          "rain_mm": 0.0
         }
       ]
     },
     "local_observation": {
       "source": "Nearby Streatham weather station via Home Assistant",
-      "updated_at": "2026-10-30T14:50:49.694158",
+      "updated_at": "2026-10-30T15:05:49.697532",
       "hourly_rain_mm": 0.0,
       "daily_rain_mm": 0.0,
       "hourly_unit": "mm/h"
