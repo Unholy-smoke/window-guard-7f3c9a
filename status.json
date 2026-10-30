@@ -1,10 +1,10 @@
 {
   "status": "monitoring",
-  "updated_at": "2026-10-30T05:40:27+00:00",
+  "updated_at": "2026-10-30T05:45:30+00:00",
   "camera": "Logi C270 HD WebCam",
-  "persistent_ratio": 0.87878,
+  "persistent_ratio": 0.880703,
   "persistent_patch": 1.0,
-  "motion_ratio": 0.007604,
+  "motion_ratio": 0.007429,
   "motion_patch": 0.1406,
   "rain_current": true,
   "rain_evidence": "formal Met Office warning active",
