@@ -1,24 +1,30 @@
 {
   "status": "monitoring",
-  "updated_at": "2026-10-30T04:20:29+00:00",
+  "updated_at": "2026-10-30T04:25:32+00:00",
   "camera": "Logi C270 HD WebCam",
-  "persistent_ratio": 0.877294,
+  "persistent_ratio": 0.878081,
   "persistent_patch": 1.0,
-  "motion_ratio": 0.008652,
+  "motion_ratio": 0.007604,
   "motion_patch": 0.0938,
-  "rain_current": false,
-  "rain_evidence": "no observed or current-hour rain evidence",
+  "rain_current": true,
+  "rain_evidence": "formal Met Office warning active",
   "water_motion_candidate": false,
   "cooldown_until": "2026-10-27T10:32:42+00:00",
   "weather": {
     "source": "Met Office London & South East England warnings",
-    "checked_at": "2026-10-30T04:05:54+00:00",
-    "warning_count": 0,
-    "warnings": [],
+    "checked_at": "2026-10-30T04:20:54+00:00",
+    "warning_count": 1,
+    "warnings": [
+      {
+        "title": "Yellow warning of fog affecting London & South East England",
+        "link": "https://www.metoffice.gov.uk/weather/warnings-and-advice/uk-warnings#?date=2026-10-30&id=cd0a7b87-0161-4bf7-bcfd-86b412314ff2&referrer=rss",
+        "description": "Yellow warning of fog affecting London & South East England: Bracknell Forest, Buckinghamshire, Hampshire, Milton Keynes, Oxfordshire, Reading, Slough, Surrey, West Berkshire, Windsor and Maidenhead, Wokingham valid from 0418 Fri 30 Oct to 1000 Fri 30 Oct"
+      }
+    ],
     "source_url": "https://www.metoffice.gov.uk/public/data/PWSCache/WarningsRSS/Region/se",
     "hourly_forecast": {
       "source": "Open-Meteo hourly forecast",
-      "checked_at": "2026-10-30T04:05:54+00:00",
+      "checked_at": "2026-10-30T04:20:54+00:00",
       "hours": 6,
       "total_precipitation_mm": 0.0,
       "peak_hour_mm": 0.0,
@@ -65,7 +71,7 @@
     },
     "local_observation": {
       "source": "Nearby Streatham weather station via Home Assistant",
-      "updated_at": "2026-10-30T05:05:23.624517",
+      "updated_at": "2026-10-30T05:20:23.629212",
       "hourly_rain_mm": 0.0,
       "daily_rain_mm": 0.0,
       "hourly_unit": "mm/h"
